@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Task 4.2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            label {
+                display: inline-block;
+                width: 150px;
+                margin-right: 10px;
+            }
+            #name,#surname{
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body> 
+        <form action="processUser.jsp" method="post"> 
+            <fieldset>
+                <legend>User Details</legend>
+                
+                <label for="firstname">Name</label> 
+                <input type="text" id="firstname" name="firstname" placeholder="Enter firstname"> <br><br>
+                
+                <label for="surname">Surname</label> 
+                <input type="text" id="surname" name="surname" placeholder="Enter surname"> <br><br>
+
+                <label for="pswrd">Password</label> 
+                <input type="password" id="pswrd" name="pswrd" placeholder="Max 10 characters"> <br><br>
+
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female"> <label for="female">Female</label><br><br>
+
+                <label for="user">Type of User</label>
+                <select id="user" name="user">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option> 
+                </select> <br><br>
+                
+                <label>Prefer Language</label> 
+                
+                <input type="checkbox" id="lang1" name="language" value="Malay">
+                <label for="lang1">Malay</label>
+                <input type="checkbox" id="lang2" name="language" value="English">
+                <label for="lang2">English</label>
+                <input type="checkbox" id="lang3" name="language" value="Mandarin">
+                <label for="lang3">Mandarin</label>
+                <input type="checkbox" id="lang4" name="language" value="Tamil">
+                <label for="lang4">Tamil</label>
+                
+                <br><br>
+                <input type="submit" value="Submit"> <input type="reset" value="Cancel">
+            </fieldset>
+        </form>
+        <p><b>&copy; 2024 - Nur Atirah</b></p>
+        <script>
+           function myFunction() {
+             var x = document.getElementById("pswrd");
+             if (x.type === "password") {
+               x.type = "text";
+             } else {
+               x.type = "password";
+             }
+           }
+        </script>
+    </body>
+</html>
