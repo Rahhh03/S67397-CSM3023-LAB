@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Register New User</title>
+</head>
+<body>
+    <h2>Register New User</h2>
+    <form action="ex.processUser.jsp" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" maxlength="15" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" maxlength="10" required><br><br>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" maxlength="50" required><br><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" maxlength="50" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+
